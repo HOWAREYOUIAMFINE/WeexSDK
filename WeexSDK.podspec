@@ -50,18 +50,14 @@ Pod::Spec.new do |s|
                     'weex_core/Source/base/android',
                     'weex_core/Source/base/base64',
                     'weex_core/Source/base/crash',
-                    'weex_core/Source/base/utils',
-                    'weex_core/Source/base/thread',
-                    'weex_core/Source/base/third_party',
-                    'weex_core/Source/base/message_loop',
-                    'weex_core/Source/base/time_point.*',
-                    'weex_core/Source/base/time_utils.*',
-                    'weex_core/Source/base/time_unit.*',
+                    'weex_core/Source/base/utils/Compatible.cpp',
+                    'weex_core/Source/base/utils/ThreadLocker.cpp',
+                    'weex_core/Source/core/parser/action_args_check.*',
                     'weex_core/Source/third_party/IPC',
                     'weex_core/Source/core/network/android/',
                     'weex_core/Source/include/JavaScriptCore/',
                     'weex_core/Source/include/wtf'
-
+  
   s.private_header_files = 'ios/sdk/WeexSDK/Sources/Component/RecycleList/WXJSASTParser.h'
   s.public_header_files = 'ios/sdk/WeexSDK/Sources/WeexSDK.h',
                           'ios/sdk/WeexSDK/Sources/Layout/WXComponent+Layout.h',
